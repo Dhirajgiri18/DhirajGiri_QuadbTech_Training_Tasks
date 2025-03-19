@@ -1,3 +1,4 @@
 service : {
-    "greet": (text) -> (text) query;
-}
+    "store_data" : (text, text) -> ();
+    "retrieve_data" : (text) -> (opt text) query;
+};

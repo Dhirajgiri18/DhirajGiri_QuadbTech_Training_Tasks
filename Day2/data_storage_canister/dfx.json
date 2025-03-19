@@ -4,17 +4,14 @@
       "candid": "src/data_storage_canister_backend/data_storage_canister_backend.did",
       "package": "data_storage_canister_backend",
       "type": "rust"
-    },
-    "data_storage_canister_frontend": {
-      "dependencies": [
-        "data_storage_canister_backend"
-      ],
-      "source": [
-        "src/data_storage_canister_frontend/assets"
-      ],
-      "type": "assets"
     }
   },
+  "metadata": [
+    {
+      "name": "candid:service",
+      "path": "src/data_storage_canister_backend/data_storage_canister_backend.did"
+    }
+  ],
   "defaults": {
     "build": {
       "args": "",
