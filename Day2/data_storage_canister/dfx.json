@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "data_storage_canister_backend": {
+      "candid": "src/data_storage_canister_backend/data_storage_canister_backend.did",
+      "package": "data_storage_canister_backend",
+      "type": "rust"
+    },
+    "data_storage_canister_frontend": {
+      "dependencies": [
+        "data_storage_canister_backend"
+      ],
+      "source": [
+        "src/data_storage_canister_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

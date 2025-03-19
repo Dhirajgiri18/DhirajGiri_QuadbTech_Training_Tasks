@@ -1,0 +1,11 @@
+/home/spyder/QuadbTech_Training/Day1/hello_icp/target/debug/deps/libfutures_task-1e80732cb2417f88.rmeta: /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/lib.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/spawn.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/arc_wake.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/waker.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/waker_ref.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/future_obj.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/noop_waker.rs
+
+/home/spyder/QuadbTech_Training/Day1/hello_icp/target/debug/deps/futures_task-1e80732cb2417f88.d: /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/lib.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/spawn.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/arc_wake.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/waker.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/waker_ref.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/future_obj.rs /home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/noop_waker.rs
+
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/lib.rs:
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/spawn.rs:
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/arc_wake.rs:
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/waker.rs:
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/waker_ref.rs:
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/future_obj.rs:
+/home/spyder/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-task-0.3.31/src/noop_waker.rs:
