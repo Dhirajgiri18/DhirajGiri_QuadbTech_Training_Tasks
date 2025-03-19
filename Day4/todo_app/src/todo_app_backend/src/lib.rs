@@ -1,51 +1,43 @@
-use candid::CandidType;
-use ic_cdk::{query, update};
-use serde::{Deserialize, Serialize};
+use candid::{CandidType, Deserialize};
+use ic_cdk::{query, storage, update};
+use serde::Serialize;
 use std::cell::RefCell;
-use std::collections::HashMap;
 
 #[derive(CandidType, Serialize, Deserialize, Clone)]
-struct Todo {
+struct TodoItem {
     id: u64,
     title: String,
     completed: bool,
 }
 
 thread_local! {
-    static TODOS: RefCell<HashMap<u64, Todo>> = RefCell::new(HashMap::new());
+    static TODOS: RefCell<Vec<TodoItem>> = RefCell::new(Vec::new());
     static NEXT_ID: RefCell<u64> = RefCell::new(0);
 }
 
 #[update]
 fn add_todo(title: String) -> u64 {
-    let id = NEXT_ID.with(|next_id| {
-        let id = *next_id.borrow();
-        *next_id.borrow_mut() += 1;
-        id
-    });
-
-    let todo = Todo {
-        id,
-        title,
-        completed: false,
-    };
-
     TODOS.with(|todos| {
-        todos.borrow_mut().insert(id, todo);
-    });
-
-    id
+        let id = NEXT_ID.with(|next_id| {
+            let id = *next_id.borrow();
+            *next_id.borrow_mut() += 1;
+            id
+        });
+        todos.borrow_mut().push(TodoItem {
+            id,
+            title,
+            completed: false,
+        });
+        id
+    })
 }
 
-#[query]
-fn get_todos() -> Vec<Todo> {
-    TODOS.with(|todos| todos.borrow().values().cloned().collect())
-}
-
+// Toggle the completion status of a To-Do item
 #[update]
 fn toggle_todo(id: u64) -> bool {
     TODOS.with(|todos| {
-        if let Some(todo) = todos.borrow_mut().get_mut(&id) {
+        let mut todos = todos.borrow_mut();
+        if let Some(todo) = todos.iter_mut().find(|t| t.id == id) {
             todo.completed = !todo.completed;
             true
         } else {
@@ -54,7 +46,19 @@ fn toggle_todo(id: u64) -> bool {
     })
 }
 
+// Get all To-Do items
+#[query]
+fn get_todos() -> Vec<TodoItem> {
+    TODOS.with(|todos| todos.borrow().clone())
+}
+
+// Delete a To-Do item
 #[update]
 fn delete_todo(id: u64) -> bool {
-    TODOS.with(|todos| todos.borrow_mut().remove(&id).is_some())
+    TODOS.with(|todos| {
+        let mut todos = todos.borrow_mut();
+        let len_before = todos.len();
+        todos.retain(|t| t.id != id);
+        todos.len() != len_before
+    })
 }
