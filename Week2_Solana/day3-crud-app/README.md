@@ -2,6 +2,8 @@
 
 ## Getting Started
 
+![Screenshot 2025-03-28 184712](https://github.com/user-attachments/assets/51ce5d8b-31bd-4047-93ab-504e11d7e88d)
+
 ### Prerequisites
 
 - Node v18.18.0 or higher
