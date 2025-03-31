@@ -1,0 +1,5 @@
+service : {
+    "increment" : () -> (int32);
+    "decrement" : () -> (int32);
+    "get" : () -> (int32) query;
+};

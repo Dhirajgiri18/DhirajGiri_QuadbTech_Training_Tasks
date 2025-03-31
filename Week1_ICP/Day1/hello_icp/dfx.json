@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "hello_icp_backend": {
+      "candid": "src/hello_icp_backend/hello_icp_backend.did",
+      "package": "hello_icp_backend",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
