@@ -1,5 +1,0 @@
-[workspace]
-members = [
-    "src/data_storage_canister_backend"
-]
-resolver = "2"

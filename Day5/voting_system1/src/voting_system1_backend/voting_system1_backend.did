@@ -1,4 +1,0 @@
-service : {
-    "vote" : (nat32) -> (text);
-    "get_results" : () -> (vec record { name : text; party : text; votes : nat32 }) query;
-};
