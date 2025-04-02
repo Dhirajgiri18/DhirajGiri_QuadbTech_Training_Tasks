@@ -30,6 +30,8 @@ npm run dev
 4. Deployment
    The project is deployed on Vercel:
    https://expense-tracker-dapp-kg2sotn51-dhirajgiri18s-projects.vercel.app/
+   ![Screenshot 2025-04-03 013444](https://github.com/user-attachments/assets/c2fe05b7-e07f-475a-bcb9-1702527837fa)
+
 
 To redeploy:
 
