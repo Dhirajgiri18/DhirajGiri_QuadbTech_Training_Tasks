@@ -1,6 +1,6 @@
-import contractData from "../abi/GasFeeTracker.json";
 import { BrowserProvider, Contract } from "ethers";
 import React, { useEffect, useState } from "react";
+import contractData from "../abi/GasFeeTracker.json"; // Import the ABI JSON file
 
 const contractAddress = "0x87984142A11578A8Ca023422E67D1Dcd09844e24";
 
