@@ -1,0 +1,4 @@
+service : {
+    add_transaction : (float64) -> (nat64);
+    get_all_transactions : () -> (vec record { id : nat64; gas_fee : float64 });
+};

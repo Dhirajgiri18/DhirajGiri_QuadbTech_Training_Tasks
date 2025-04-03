@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "gas-fee-comparison-backend": {
+      "type": "custom",
+      "candid": "src/gas-fee-comparison-backend/gas-fee-comparison-backend.did",
+      "wasm": "target/wasm32-unknown-unknown/release/gas_fee_comparison_backend.wasm",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
+    },
+    "gas-fee-comparison-frontend": {
+      "dependencies": [
+        "gas-fee-comparison-backend"
+      ],
+      "source": [
+        "src/gas-fee-comparison-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "gas-fee-comparison-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
