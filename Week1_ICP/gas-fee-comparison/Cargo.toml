@@ -1,5 +1,0 @@
-[workspace]
-members = [
-    "src/gas-fee-comparison-backend"
-]
-resolver = "2"
