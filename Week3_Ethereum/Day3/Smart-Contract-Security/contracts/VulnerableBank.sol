@@ -12,10 +12,10 @@ contract VulnerableBank {
         uint256 amount = balances[msg.sender];
         require(amount > 0, "Insufficient balance");
 
+        balances[msg.sender] = 0; // Update state before external call
+
         (bool sent, ) = msg.sender.call{value: amount}("");
         require(sent, "Failed to send Ether");
-
-        balances[msg.sender] = 0; // Unsafe order
     }
 
     function getBalance(address user) public view returns (uint) {
