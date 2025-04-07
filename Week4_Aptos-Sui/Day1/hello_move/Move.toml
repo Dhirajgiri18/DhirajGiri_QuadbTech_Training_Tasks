@@ -1,0 +1,16 @@
+[package]
+name = "hello_move"
+version = "1.0.0"
+authors = ["spyder"]
+
+[addresses]
+hello_move = "dd1fd2a8015384c747e422c41eecc035ca566fbee05555a277c39045435dc9bc"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
