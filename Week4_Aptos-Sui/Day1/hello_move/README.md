@@ -13,7 +13,7 @@ Display debug output using aptos_std::debug::print.
 ![alt text](<Screenshot 2025-04-07 153144.png>)
 
 It includes a say_hello function that prints "Hello from Aptos Move!" using debug logs, and a set_message function to store personalized messages on the blockchain.
-![alt text](<Screenshot 2025-04-07 153245.png>)
+![alt text](<Screenshot 2025-04-07 153924.png>)
 
 This project helps beginners understand how to:
 
