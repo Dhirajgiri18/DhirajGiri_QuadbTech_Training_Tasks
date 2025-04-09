@@ -1,0 +1,16 @@
+[package]
+name = "lending_borrowing"
+version = "1.0.0"
+authors = []
+
+[addresses]
+lending_borrowing = "0xe1f7700eda0397d24f0271f4d854c56ebc5828f6edf2e9424f4328ac0839ef25"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
