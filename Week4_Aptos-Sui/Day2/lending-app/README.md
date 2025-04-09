@@ -13,5 +13,6 @@ View Total Lending/Borrowing Amount: Displays the total amounts of funds lent an
 Repayment and Withdrawal: Enables users to repay loans and withdraw deposited funds.
 
 The dApp features a clean, responsive user interface built with React and Material UI, offering a modern experience across devices.
-![alt text](<Screenshot 2025-04-10 012525.png>)
-![alt text](<Screenshot 2025-04-10 012902.png>)
+![Screenshot 2025-04-10 012525](https://github.com/user-attachments/assets/f40ffb61-cc0b-4211-9b88-7834a79e6558)
+![Screenshot 2025-04-10 012902](https://github.com/user-attachments/assets/22b95094-0571-4e4f-b977-6dc400a509d5)
+
