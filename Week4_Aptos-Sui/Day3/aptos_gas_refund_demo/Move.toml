@@ -1,0 +1,16 @@
+[package]
+name = "gas_refund_demo"
+version = "1.0.0"
+authors = []
+
+[addresses]
+gas_refund_demo = "0xadd45e28494b481e39973ebad4b8c70d1a5aaa59f17016e70c1f5dfe9fef6872"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
